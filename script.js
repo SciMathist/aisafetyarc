@@ -27,7 +27,7 @@ function setup() {
   canvas.style('pointer-events', 'none');
 
   // slow the simulation a bit so background is gentle
-  frameRate(10);
+  frameRate(15);
 
   resetBoard();
 }
