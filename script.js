@@ -144,12 +144,12 @@ Cell.prototype.show = function() {
     if (this.previous === 0 && this.state === 1) {
       // born this frame: faint blue
       noStroke();
-      fill(0, 0, 255, 40);
+      fill(0, 0, 255, 10);
       square(this.x, this.y, this.w);
     } else if (this.previous === 1 && this.state === 0) {
       // died this frame: faint red
       noStroke();
-      fill(255, 0, 0, 40);
+      fill(255, 0, 0, 10);
       square(this.x, this.y, this.w);
     }
     return;
@@ -159,13 +159,13 @@ Cell.prototype.show = function() {
   stroke(0, 10);
   // If the cell is born this frame, color it blue with low opacity
   if (this.previous === 0 && this.state === 1) {
-    fill(0, 0, 255, 50);
+    fill(0, 0, 0, 30);
   } else if (this.state === 1) {
     // alive cell - very faint
-    fill(0, 20);
+    fill(0, 10);
   // If the cell dies this frame, color it red with low opacity
   } else if (this.previous === 1 && this.state === 0) {
-    fill(255, 0, 0, 50);
+    fill(0, 0, 0, 20);
   } else {
     // dead cell - fully transparent
     noFill();
